@@ -6,17 +6,11 @@ main {
   gap: 183px;
 }
 
-.content-section {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .header {
   display: grid;
   grid-template-columns: 440px 0.75fr 0.65fr 1.17fr;
   margin-top: 94px;
   margin-left: 24px;
-  margin-bottom: 93px;
 }
 
 .header__menu {
@@ -80,10 +74,11 @@ main {
 
 .cover {
   position: relative;
-  padding: 165px 50px 50px 50px;
+  padding-bottom: 50px;
   background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  margin-top: 93px;
 }
 
 .overlay {
@@ -97,6 +92,9 @@ main {
 
 .cover__title {
   position: relative;
+  padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
   z-index: 1;
   display: flex;
   flex-direction: column;
