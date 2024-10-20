@@ -6,12 +6,16 @@ main {
   gap: 183px;
 }
 
+.content-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .header {
   display: grid;
-  grid-template-columns: 440px 0.75fr 0.65fr 1.17fr;
-  margin-top: 94px;
-  margin-left: 24px;
-  width: 100%;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
+  align-items: center;
+  padding: 92px 51px 89px;
 }
 
 .header__menu {
@@ -76,11 +80,9 @@ main {
 
 .cover {
   position: relative;
-  margin-top: 93px;
-  padding-bottom: 50px;
+  padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
@@ -96,9 +98,9 @@ main {
 .cover__title {
   position: relative;
   z-index: 1;
-  display: grid;
-  gap: 50px 3px;
-  grid-template-columns: 50px 300px 50px 222px 75px 385px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: #FFF;
   font-weight: bold;
   font-size: 100px;
@@ -108,30 +110,17 @@ main {
 }
 
 .aligned-text {
-  z-index: 1;
-  position: relative;
-  grid-row: 2/3;
-  grid-column: 2/3;
-  align-self: center;
+  display: block;
 }
 
 .aligned-text_center {
-  display: block;
-  position: relative;
-  grid-row: 3/4;
-  grid-column: 3/6;
-  justify-self: center;
-  align-self: center;
+  line-height: 1;
+  text-align: center;
 }
 
 .aligned-text_right {
-  display: block;
+  line-height: 1;
   text-align: right;
-  position: relative;
-  grid-row: 4/5;
-  grid-column: 5/7;
-  justify-self: start;
-  align-self: center;
 }
 
 .letter-spacing-extended {
