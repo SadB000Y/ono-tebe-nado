@@ -13,9 +13,10 @@ main {
 
 .header {
   display: grid;
-  grid-template-columns: 1.51fr 2fr 1.5fr;
-  align-items: center;
-  padding: 92px 51px 89px;
+  grid-template-columns: 440px 0.75fr 0.65fr 1.17fr;
+  margin-top: 94px;
+  margin-left: 24px;
+  margin-bottom: 93px;
 }
 
 .header__menu {
@@ -52,7 +53,6 @@ main {
 .header__logo-image {
   justify-self: center;
   grid-column: 2/3;
-  display: block;
   width: 148px;
   height: 105px;
   background-image: url(../images/logo-black.svg);
@@ -182,12 +182,12 @@ main {
 
 .lots__card-list {
   display: flex;
-    list-style-type: none;
-    margin-top: 27px;
-    margin-left: 24px;
-    margin-right: 24px;
-    gap: 25px;
-    flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 27px;
+  margin-left: 24px;
+  margin-right: 24px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lost__card-list-item {
@@ -265,57 +265,67 @@ main {
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
-  padding: 0 50px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .about__column {
-  justify-self: center;
-}
-
-.about__column_text {
-  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+  row-gap: 5px;
 }
 
 .about__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #000000;
+  border-radius: 50%;
   width: 240px;
   height: 240px;
-  border-radius: 50%;
-  background-color: #000000;
+  justify-self: center;
+  align-self: center;
+  grid-row: 1/2;
 }
 
 .about__logo-image {
-  width: 148px;
+  background-image: url(../images/logo-white.svg);
+  background-position: center;
+  background-size: 62%;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .about__title {
+  display: grid;
   padding: 100px 0 104px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
+  grid-column: 2/3;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-
-.about__text p {
   font-size: 20px;
-  line-height: normal;
+  line-height: 24px;
+  justify-self: start;
+  gap: 25px;
+  letter-spacing: 0px;
+  grid-column: 2/3;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 180px 50px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 180px;
+  margin-left: 52px;
+  margin-right: 50px;
+  margin-bottom: 88px;
+}
+
+.footer address {
+  grid-column: 1/2;
 }
 
 .footer__social-icon {
@@ -339,7 +349,14 @@ main {
 }
 
 .footer__social-list {
+  grid-column: 3/4;
   display: flex;
+  justify-self: end;
   gap: 48px;
-  list-style: none;
+}
+
+.footer__social-list-item {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
 }

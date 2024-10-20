@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header content-section">
+    <header class="header">
       <nav class="header__menu">
-        <ul class="header__links-list">
+        <ol class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
             <a class="header__link header__link_active text-link" href="">главная</a>
           </li>
@@ -23,7 +23,7 @@
           <li class="header__links-list-item text-link">
             <a class="header__link" href="">об аукционе</a>
           </li>
-        </ul>
+        </ol>
       </nav>
         <a class="header__logo-image">
         </a>
@@ -112,27 +112,22 @@
         </ul>
         <a class="lots__look-more-link text-link" href="">посмотреть больше</a>
       </section>
-      <section class="about content-section">
-        <div class="about__column">
+      <section class="about">
+        <article class="about__column">
           <div class="about__logo">
-            <img
-              class="about__logo-image"
-              src="images/logo-white.svg"
-              alt="Логотип проекта"
-            />
+            <div class="about__logo-image">
+            </div>
           </div>
-        </div>
-        <div class="about__column about__column_text">
           <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
-            <p>
+            <p class="about__text">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p>
+            <p class="about__text">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -141,12 +136,11 @@
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
             </p>
-          </div>
-        </div>
+        </article>
       </section>
     </main>
 
-    <footer class="footer content-section">
+    <footer class="footer">
       <address class="address">
         <a class="address__item text-link" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="address__item text-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
